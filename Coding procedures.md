@@ -1,3 +1,5 @@
+# Coding procedures
+
 ## PHP coding standards
 
 The code in the each of the Siteworks plugins is written in PHP with a few JavaScript files and CSS files.
@@ -13,6 +15,7 @@ The overall structure of the main plugin "core" is described by the file "u3a Si
 We follow the guidance given in https://developer.wordpress.org/plugins/security/
 
 ## Code editor
+
 Any text editor may be used, but Visual Studio Code is recommended as it provides built-in help for checking the syntax of PHP functions and other useful features.
 
 ## Code checker
@@ -26,10 +29,9 @@ Where appropriate we may use phpcs:ignore to overrule a rule that should not app
 ## Code change control
 
 Version management uses the "git" approach and the code is stored in GitHub.
-Our documentation repository contains a powerpoint presentation about the basics of Github, and a description of common command line git functions.
-The app "GitHub Desktop" provide an alternative point-and-click approach to carrying out git functions.
+Our documentation repository contains a powerpoint presentation about the basics of GitHub, and a description our use of GitHub is in "Github version control and update servers.docx"
 
-The latest version of each plugin in always in branch 'main'. Changes are made in branches cloned from main. This is described in the file, "Our versions and branches".
+This describes how the latest version of each plugin in always in branch 'main'. Changes are made in branches cloned from main.
 
 Note that each plugin has a Changelog in the readme.txt file.
 
@@ -48,7 +50,7 @@ It must also be added to the change log in the readme.txt file.
 
 ## Update server
 
-The latest release of each plugin is held on an update server.
+The latest published release of each plugin is held on an update server.
 
 Each plugin uses the plugin update service provided in the Configuration plugin. This means that if the update service for Siteworks is changed, only the Configuration plugin needs to be changed.
 
